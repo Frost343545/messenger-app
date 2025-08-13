@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- Exclude specific files or directories from backup -->
+    <exclude domain="database" path="messenger_database"/>
+    <exclude domain="sharedpref" path="com.messenger.app_preferences.xml"/>
+</full-backup-content>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules>
+    <cloud-backup>
+        <!-- Exclude database from cloud backup -->
+        <exclude domain="database" path="messenger_database"/>
+        <exclude domain="sharedpref" path="com.messenger.app_preferences.xml"/>
+    </cloud-backup>
+    
+    <device-transfer>
+        <!-- Allow device transfer for all data -->
+        <include domain="file" path="."/>
+    </device-transfer>
+</data-extraction-rules>

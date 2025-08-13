@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.messenger.app-mergeDebugResources-61:/values-v16/values-v16.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Frost_Guniar\\.gradle\\caches\\transforms-3\\5e0eb68a5716cdfe313e221efb4d1df6\\transformed\\core-1.12.0\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                }
+            ]
+        }
+    ]
+}

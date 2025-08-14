@@ -12,8 +12,8 @@ object DatabaseConfig {
     const val MYSQL_ROOT_USERNAME = "root"
     const val MYSQL_ROOT_PASSWORD = "QhRDpvMOnPOfPgxooBtgouZighZmZORL"
     
-    // API Configuration (Railway)
-    const val API_BASE_URL = "https://web-production-0818c.up.railway.app/api/"
+    // API Configuration (Render)
+    const val API_BASE_URL = "https://messenger-app-1-4fo0.onrender.com/api/"
     const val API_TIMEOUT = 30L  // секунды
     
     // Connection Settings

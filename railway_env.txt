@@ -1,0 +1,19 @@
+# Railway Environment Variables для MySQL
+# Добавьте эти переменные в Railway Dashboard → Variables
+
+MYSQL_HOST=shinkansen.proxy.rlwy.net
+MYSQL_PORT=28429
+MYSQL_DATABASE=railway
+MYSQL_USERNAME=root
+MYSQL_PASSWORD=QhRDpvMOnPOfPgxooBtgouZighZmZORL
+
+# Дополнительные настройки
+PORT=8080
+FLASK_ENV=production
+FLASK_DEBUG=false
+
+# Строка подключения для тестирования
+# mysql://root:QhRDpvMOnPOfPgxooBtgouZighZmZORL@shinkansen.proxy.rlwy.net:28429/railway
+
+# Команда для подключения через CLI
+# mysql -h shinkansen.proxy.rlwy.net -u root -p QhRDpvMOnPOfPgxooBtgouZighZmZORL --port 28429 --protocol=TCP railway

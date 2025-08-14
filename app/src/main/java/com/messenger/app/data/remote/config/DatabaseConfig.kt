@@ -1,19 +1,19 @@
 package com.messenger.app.data.remote.config
 
 object DatabaseConfig {
-    // MySQL Server Configuration
-    const val MYSQL_HOST = "localhost"  // или IP адрес вашего сервера
-    const val MYSQL_PORT = 3306
-    const val MYSQL_DATABASE = "messenger_db"
-    const val MYSQL_USERNAME = "messenger_user"
-    const val MYSQL_PASSWORD = "messenger_password123"
+    // Railway MySQL Configuration
+    const val MYSQL_HOST = "shinkansen.proxy.rlwy.net"
+    const val MYSQL_PORT = 28429
+    const val MYSQL_DATABASE = "railway"
+    const val MYSQL_USERNAME = "root"
+    const val MYSQL_PASSWORD = "QhRDpvMOnPOfPgxooBtgouZighZmZORL"
     
-    // Root credentials for setup (заменить на ваши)
+    // Root credentials for Railway
     const val MYSQL_ROOT_USERNAME = "root"
-    const val MYSQL_ROOT_PASSWORD = "Frost113ru"
+    const val MYSQL_ROOT_PASSWORD = "QhRDpvMOnPOfPgxooBtgouZighZmZORL"
     
-    // API Configuration (для REST API)
-    const val API_BASE_URL = "http://localhost:8080/api/"  // Измените на ваш API сервер
+    // API Configuration (Railway)
+    const val API_BASE_URL = "https://your-app.railway.app/api/"  // Замените на ваш URL
     const val API_TIMEOUT = 30L  // секунды
     
     // Connection Settings
@@ -27,7 +27,7 @@ object DatabaseConfig {
     const val CACHE_EXPIRY = 300000L  // 5 минут в миллисекундах
     
     // Security Settings
-    const val USE_SSL = false  // Измените на true для продакшена
+    const val USE_SSL = true  // Railway использует SSL
     const val ALLOW_PUBLIC_KEY_RETRIEVAL = true
     
     /**

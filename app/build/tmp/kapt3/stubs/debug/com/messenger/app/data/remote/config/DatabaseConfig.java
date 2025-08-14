@@ -16,7 +16,7 @@ public final class DatabaseConfig {
     @org.jetbrains.annotations.NotNull()
     public static final java.lang.String MYSQL_ROOT_PASSWORD = "QhRDpvMOnPOfPgxooBtgouZighZmZORL";
     @org.jetbrains.annotations.NotNull()
-    public static final java.lang.String API_BASE_URL = "https://your-app.railway.app/api/";
+    public static final java.lang.String API_BASE_URL = "https://messenger-app-1-4fo0.onrender.com/api/";
     public static final long API_TIMEOUT = 30L;
     public static final long CONNECTION_TIMEOUT = 10000L;
     public static final long SOCKET_TIMEOUT = 30000L;

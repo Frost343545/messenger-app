@@ -17,13 +17,13 @@ import os
 app = Flask(__name__)
 CORS(app)  # Разрешаем CORS для всех доменов
 
-# MySQL Configuration
+# MySQL Configuration - Railway Ready
 MYSQL_CONFIG = {
-    'host': 'localhost',
-    'port': 3306,
-    'database': 'messenger_db',
-    'user': 'messenger_user',
-    'password': 'messenger_password123',
+    'host': os.environ.get('MYSQL_HOST', 'localhost'),
+    'port': int(os.environ.get('MYSQL_PORT', 3306)),
+    'database': os.environ.get('MYSQL_DATABASE', 'messenger_db'),
+    'user': os.environ.get('MYSQL_USERNAME', 'messenger_user'),
+    'password': os.environ.get('MYSQL_PASSWORD', 'messenger_password123'),
     'charset': 'utf8mb4',
     'autocommit': True
 }
@@ -331,9 +331,13 @@ def database_status():
 
 if __name__ == '__main__':
     print("🚀 Запуск Messenger MySQL API Server...")
-    print("📱 API будет доступен по адресу: http://localhost:8080")
-    print("🗄️  База данных: MySQL (messenger_db)")
-    print("👤 Пользователь: messenger_user")
+    
+    # Получаем порт из переменных окружения Railway
+    port = int(os.environ.get('PORT', 8080))
+    
+    print(f"📱 API будет доступен по адресу: http://0.0.0.0:{port}")
+    print("🗄️  База данных: MySQL (Railway)")
+    print("🌐 Режим: Production (Railway)")
     print()
     
     # Инициализируем базу данных
@@ -352,6 +356,7 @@ if __name__ == '__main__':
     print("   GET  /api/users - Список пользователей")
     print("   GET  /api/chats - Список чатов")
     print()
-    print("Нажмите Ctrl+C для остановки сервера")
+    print("🚀 Сервер запущен и готов к работе!")
     
-    app.run(host='0.0.0.0', port=8080, debug=True)
+    # Для Railway используем 0.0.0.0 и порт из переменных окружения
+    app.run(host='0.0.0.0', port=port, debug=False)

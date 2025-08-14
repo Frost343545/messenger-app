@@ -1,4 +1,4 @@
-#Thu Aug 14 02:36:22 MSK 2025
+#Thu Aug 14 03:11:30 MSK 2025
 base.0=C\:\\Users\\Frost_Guniar\\Desktop\\Messanger\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\Users\\Frost_Guniar\\Desktop\\Messanger\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.10=C\:\\Users\\Frost_Guniar\\Desktop\\Messanger\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\7\\classes.dex

@@ -13,7 +13,7 @@ object DatabaseConfig {
     const val MYSQL_ROOT_PASSWORD = "QhRDpvMOnPOfPgxooBtgouZighZmZORL"
     
     // API Configuration (Railway)
-    const val API_BASE_URL = "https://your-app.railway.app/api/"  // Замените на ваш URL
+    const val API_BASE_URL = "https://web-production-0818c.up.railway.app/api/"
     const val API_TIMEOUT = 30L  // секунды
     
     // Connection Settings

@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: messenger-api
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn mysql_api_server:app
+    envVars:
+      - key: MYSQL_HOST
+        value: shinkansen.proxy.rlwy.net
+      - key: MYSQL_PORT
+        value: 28429
+      - key: MYSQL_DATABASE
+        value: railway
+      - key: MYSQL_USERNAME
+        value: root
+      - key: MYSQL_PASSWORD
+        value: QhRDpvMOnPOfPgxooBtgouZighZmZORL
+      - key: FLASK_ENV
+        value: production
+      - key: FLASK_DEBUG
+        value: false
